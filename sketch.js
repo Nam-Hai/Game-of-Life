@@ -14,3 +14,24 @@ for (let i = 0; i < gridDimension[0] / cellDimension; i++) {
     gridDOM.appendChild(c.dom);
   }
 }
+
+function fromCartToIndex(x, y) {
+  return x + y * gridDimension[1] / cellDimension
+}
+
+const start = N.Get.class('start')[0];
+
+start.addEventListener('click', startHandler);
+
+function startHandler() {
+
+  setInterval(() => {
+    for (let i = 1; i < gridDimension[0] / cellDimension - 1; i++) {
+      for (let j = 1; j < gridDimension[1] / cellDimension - 1; j++) {
+
+        // penser a faire une copie du grid state, car sinon l'update va influencer 
+      }
+    }
+
+  }, 1000 / 60)
+}

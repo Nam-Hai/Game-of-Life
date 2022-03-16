@@ -3,7 +3,7 @@ class Cell {
         this.x = x;
         this.y = y;
 
-        this.alive = true;
+        this.alive = false;
         this.dom = N.Cr('div');
         this.dom.classList.add('cell');
 
