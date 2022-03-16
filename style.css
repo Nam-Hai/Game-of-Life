@@ -97,12 +97,12 @@ small{
 }
 
 .grid {
-  width: var(--width);
+  width: 100%;
   height: var(--width);
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem auto;
+  margin: 5rem auto 2rem;
 }
 
 .cell {
@@ -114,4 +114,13 @@ small{
 
 .cell.alive {
   background: #000;
+}
+.grid-container {
+  width: var(--width);
+  margin: 0 auto;
+}
+
+.grid-container button {
+  width: 5rem;
+  height: 1.5rem;
 }
