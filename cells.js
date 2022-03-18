@@ -11,9 +11,23 @@ class Cell {
         this.dom.addEventListener('click', this.changeStatue);
     }
 
+    getAlive() {
+        return this.alive;
+    }
 
     changeStatue() {
         this.alive = !this.alive;
         this.dom.classList.toggle('alive');
     }
+
+    die() {
+        if (this.alive) this.dom.classList.toggle('alive');
+        this.alive = false;
+    }
+
+    live() {
+        if (!this.alive) this.dom.classList.toggle('alive');
+        this.alive = true;
+    }
+
 }
